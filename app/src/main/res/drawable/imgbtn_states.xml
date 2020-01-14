@@ -1,0 +1,5 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ic_pause_circle_outline"
+        android:state_checked="true" />
+    <item android:drawable="@drawable/ic_play_circle_outline" />
+</selector>

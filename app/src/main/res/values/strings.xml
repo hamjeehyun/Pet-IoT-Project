@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">멍멍이</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="send">send</string>
+
+    <string name="email">이메일</string>
+    <string name="password">비밀번호</string>
+
+    <string name="signIn">로그인</string>
+    <string name="success_login">로그인 성공</string>
+    <string name="failed_login">로그인 실패</string>
+
+    <string name="singUp">회원가입</string>
+    <string name="success_signup">회원가입 성공</string>
+    <string name="failed_signup">회원가입 실패</string>
+</resources>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffff">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/freeboardwriting_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#00ff0000"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+            android:id="@+id/titleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/nanumbarungothicbold"
+            android:gravity="center"
+            android:text="글쓰기"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignEnd="@+id/titleText"
+                android:background="@drawable/border"
+                android:fontFamily="@font/nanumbarungothic"
+                android:onClick="addPost"
+                android:paddingRight="10dp"
+                android:text="등록"
+                android:textColor="#000"
+                android:textSize="10dp" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <EditText
+        android:id="@+id/edit_text_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:fontFamily="@font/nanumbarungothic"
+        android:textSize="15dp"
+        android:hint="제목"/>
+
+    <EditText
+        android:id="@+id/edit_text_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:inputType="textMultiLine|textNoSuggestions"
+        android:gravity="top"
+        android:textColorHighlight="#FAB244"
+        android:fontFamily="@font/nanumbarungothic"
+        android:textSize="15dp"
+        android:textColorLink="#ffffff"
+        android:background="@drawable/border"
+        android:hint="내용"/>
+
+    <ImageView
+        android:id="@+id/uploadImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/chooseImageBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="addImage"
+        app:srcCompat="@drawable/ic_image" />
+
+
+
+</LinearLayout>
+</LinearLayout>

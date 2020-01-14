@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/post_detail_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#00ff0000"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/nanumbarungothicbold"
+            android:text="자유게시판"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/detail_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/nanumbarungothic"
+                android:hint="detail_title"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/detail_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumbarungothic"
+                    android:text="detail_time"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/detail_author"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumbarungothic"
+                    android:paddingLeft="10dp"
+                    android:text="detail_author"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/detail_description"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/nanumbarungothic"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingTop="30dp"
+                android:text="detail_description"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:id="@+id/detail_imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_comments"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingTop="100dp" />
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/comment_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/field_comment_text"
+            android:layout_width="336dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:fontFamily="@font/nanumbarungothic"
+            android:hint="댓글을 입력하세요"
+            android:inputType="textPersonName"
+            android:textSize="12dp" />
+
+        <Button
+            android:id="@+id/button_post_comment"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_alignEnd="@+id/titleText"
+            android:background="@drawable/border"
+            android:fontFamily="@font/nanumbarungothic"
+            android:gravity="center"
+            android:onClick="addPost"
+            android:paddingRight="10dp"
+            android:text="등록"
+            android:textColor="#000"
+            android:textSize="10dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

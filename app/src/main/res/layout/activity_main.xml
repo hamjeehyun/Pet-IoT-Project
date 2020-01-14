@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <ImageView
+        android:id="@+id/userImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/ic_launcher_2" />
+
+    <ImageView
+        android:id="@+id/stateImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="78dp"
+        android:layout_above="@+id/userImage"
+        android:layout_gravity="top" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp">
+
+        <com.example.teampie_2.CustomTextView
+            android:id="@+id/mydogBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanumbarungothic"
+            android:paddingBottom="10dp"
+            android:text="나의 강아지 >"
+            android:textSize="18dp"
+            android:textColor="#fff"
+            app:textStroke="true"
+            app:textStrokeColor="#000"/>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right">
+
+            <com.example.teampie_2.CustomTextView
+                android:id="@+id/loginBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="0dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/nanumbarungothic"
+                android:gravity="center|right"
+                android:paddingTop="10dp"
+                android:paddingRight="20dp"
+                android:text="로그인/회원가입"
+                android:textSize="12dp"
+                android:textColor="#fff"
+                app:textStroke="true"
+                app:textStrokeColor="#000"/>
+
+            <com.example.teampie_2.CustomTextView
+                android:id="@+id/logoutBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_weight="1"
+                android:fontFamily="@font/nanumbarungothic"
+                android:gravity="center|right"
+                android:paddingTop="10dp"
+                android:paddingRight="20dp"
+                android:text="로그아웃"
+                android:textSize="12dp"
+                android:textColor="#fff"
+                app:textStroke="true"
+                app:textStrokeColor="#000"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/myPetName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingStart="10dp"
+                android:fontFamily="@font/nanumbarungothic"
+                android:textColor="#000"
+                android:textSize="18dp"
+                android:text="로그인 후"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="right">
+
+                <TextView
+                    android:id="@+id/stateTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_marginTop="5dp"
+                    android:paddingEnd="10dp"
+                    android:fontFamily="@font/nanumbarungothic"
+                    android:textColor="#8C8C8C"
+                    android:textSize="12dp"
+                    android:text=" "/>
+
+            <TextView
+                android:id="@+id/state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_marginTop="5dp"
+                android:paddingEnd="10dp"
+                android:fontFamily="@font/nanumbarungothic"
+                android:text="클릭하면 나의 강아지 상태를 확인 할 수 있어요"
+                android:textColor="#000"
+                android:textSize="12dp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/myPetProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:text="프로필을 등록해주세요"
+            android:fontFamily="@font/nanumbarungothic"
+            android:textColor="#000"
+            android:textSize="15dp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanumbarungothic"
+            android:textColor="#8C8C8C"
+            android:paddingLeft="20dp"
+            android:textSize="12dp"
+            android:text="버튼을 누르면 강아지에게 편안한 음악을 들려줘요" />
+
+        <ToggleButton
+            android:id="@+id/musicPlayBtnToggleButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/imgbtn_states"
+            android:layout_marginLeft="20dp"
+            android:text="ToggleButton"
+            android:textOff=" "
+            android:textOn=" " />
+
+
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/recent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nanumbarungothic"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:text="최신 글 >"
+        android:textColor="#000000"
+        android:textSize="18dp" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/main_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="222dp"
+        android:layout_margin="10dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/feederBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/nanumbarungothic"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="밥 주기"
+            android:textColor="#000000"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/postBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/nanumbarungothic"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="게시판"
+            android:textColor="#000000"
+            android:textSize="12dp"
+            app:srcCompat="@drawable/ic_music" />
+
+        <TextView
+            android:id="@+id/videoBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/nanumbarungothic"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="영상통화"
+            android:textColor="#000000"
+            android:textSize="12dp"
+            app:srcCompat="@drawable/ic_video" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+    <!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="74dp"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingLeft="40dp">
+
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+            <Button
+                android:id="@+id/edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:background="#00ff0000"
+                android:fontFamily="@font/interparkgothicmedium"
+                android:text="수정" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="알림"
+                    android:fontFamily="@font/interparkgothicmedium"
+                    android:textColor="#000"
+                    android:textSize="20dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/interparkgothicmedium"
+                        android:gravity="right"
+                        android:text="OFF"
+                        android:textColor="#000" />
+
+                    <Switch
+                        android:id="@+id/m_switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="15dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:track="@drawable/switch_track_selector"
+                        android:thumb="@drawable/switch_thumb_selector"/>
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/interparkgothicmedium"
+                        android:text="ON"
+                        android:textColor="#000" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        -->
+
+
+</LinearLayout>

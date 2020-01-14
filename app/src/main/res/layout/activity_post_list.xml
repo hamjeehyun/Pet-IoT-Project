@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#F6F6F6">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/post_list_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ffff"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanumbarungothicbold"
+            android:text="자유게시판"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="10dp" />
+
+        <Button
+            android:id="@+id/writingBtn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="#FAB244"
+            android:fontFamily="@font/nanumbarungothic"
+            android:text="글쓰기"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:onClick="settingProfile"/>
+
+
+
+</LinearLayout>

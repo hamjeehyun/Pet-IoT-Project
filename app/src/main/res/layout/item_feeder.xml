@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginRight="1dp"
+    android:layout_marginTop="1dp"
+    android:layout_marginLeft="1dp"
+    app:cardBackgroundColor="#ffff"
+    android:background="#ffffff">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+
+      <TextView
+          android:id="@+id/AmPmTextView"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="top|start"
+          android:layout_marginStart="10dp"
+          android:layout_marginTop="20dp"
+          android:layout_marginBottom="20dp"
+          android:fontFamily="@font/nanumbarungothic"
+          android:text="오전"
+          android:textSize="12dp"
+          android:textColor="#000000"/>
+
+      <TextView
+      android:id="@+id/hourTimeTextView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="top|start"
+      android:layout_marginStart="10dp"
+      android:layout_marginTop="20dp"
+      android:layout_marginBottom="20dp"
+      android:fontFamily="@font/nanumbarungothic"
+      android:text="2"
+      android:textSize="20dp"
+      android:textColor="#000000"/>
+
+      <TextView
+          android:id="@+id/hourTime"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="top|start"
+          android:layout_marginStart="5dp"
+          android:layout_marginTop="20dp"
+          android:layout_marginBottom="20dp"
+          android:fontFamily="@font/nanumbarungothic"
+          android:text="시"
+          android:textSize="20dp"
+          android:textColor="#000000"/>
+
+      <TextView
+          android:id="@+id/minuteTimeTextView"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="top|start"
+          android:layout_marginStart="20dp"
+          android:layout_marginTop="20dp"
+          android:layout_marginBottom="20dp"
+          android:fontFamily="@font/nanumbarungothic"
+          android:text="41"
+          android:textSize="20dp"
+          android:textColor="#000000"/>
+      <TextView
+          android:id="@+id/minuteTime"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="top|start"
+          android:layout_weight="2"
+          android:layout_marginStart="5dp"
+          android:layout_marginTop="20dp"
+          android:layout_marginBottom="20dp"
+          android:fontFamily="@font/nanumbarungothic"
+          android:text="분"
+          android:textSize="20dp"
+          android:textColor="#000000"/>
+  </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffff">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/alarm_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#FAB244"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" >
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:fontFamily="@font/nanumbarungothicbold"
+        android:text="예약하기"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TimePicker
+            android:id="@+id/time_picker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:layout_gravity="center"
+            android:headerBackground="#FAB244"
+            android:numbersBackgroundColor="#EAEAEA"
+            android:numbersSelectorColor="#FAB244"
+            android:numbersTextColor="#000000" />
+
+
+        <Button
+            android:id="@+id/settingBtn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="#FAB244"
+            android:fontFamily="@font/nanumbarungothic"
+            android:onClick="addFeeder"
+            android:text="저장하기"
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

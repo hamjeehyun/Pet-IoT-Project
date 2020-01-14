@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/logout_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#00ff0000"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanumbarungothic"
+            android:text="로그아웃"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+    </android.support.v7.widget.Toolbar>
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="5"
+        app:srcCompat="@drawable/ic_dog" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:fontFamily="@font/nanumbarungothic"
+        android:gravity="center_horizontal"
+        android:text="다음에 또 봐요!"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/logoutBtn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="#FAB244"
+        android:fontFamily="@font/nanumbarungothic"
+        android:text="로그아웃"
+        android:textColor="#ffffff"
+        android:textSize="18dp" />
+
+</LinearLayout>
