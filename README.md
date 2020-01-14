@@ -1,10 +1,3 @@
----
-layout: post
-title: 지능형 반려동물 케어시스템
-img: "assets/img/portfolio/petIoTService.jpg"
-date: 27 September 2019
-tags: [Portfolio, project]
----
 ### 프로젝트
 - MQTT 및 Deep Learning 기술을 이용한 지능형 반려동물 케어시스템
 - 4인 팀프로젝트
@@ -63,6 +56,4 @@ tags: [Portfolio, project]
 - 2019.8 광운대학교 해커톤 <장려상>
 - 2019.9 한성대학교 교내 공학경진대회 <은상>
 
-<br>
-<br>
-![프로젝트 전체 설명서](/assets/img/portfolio/petProject.jpg)
+
